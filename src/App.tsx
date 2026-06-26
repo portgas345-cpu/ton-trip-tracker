@@ -474,7 +474,7 @@ function App() {
 
       {/* Footer */}
       <div className="footer">
-        DESIGNED BY <span style={{ fontWeight: 'bold', color: 'var(--secondary)' }}>Ton (ต้นนะครับ)</span> | © 2026 v.3.0.1
+        DESIGNED BY <span style={{ fontWeight: 'bold', color: 'var(--secondary)' }}>9ton (ต้นนะครับ)</span> | © 2026 v.3.0.1
         <div style={{ marginTop: '6px', fontSize: '10px', opacity: 0.7 }}>
           ขับเคลื่อนด้วยพลังแห่งมรดกมรกตลาว 🇱🇦
         </div>
