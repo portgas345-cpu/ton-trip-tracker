@@ -423,22 +423,22 @@ function App() {
           <div className="card">
             <h2>🛠️ ตั้งค่าเรทและข้อมูลทริป</h2>
             <div className="form-group" style={{ marginTop: '16px' }}>
-              <label>📈 อัตราแลกเปลี่ยน (1 บาทไทย = ? กีบลาว)</label>
-              <input 
-                type="number" 
-                value={exchangeRate} 
-                onChange={(e) => updateSettings({ rate: parseFloat(e.target.value) || 0 })} 
+              <label>📈 อัตราแลกเปลี่ยน (1 บาทไทย = ? สกุลเงินท้องถิ่น)</label>
+              <input
+                type="number"
+                value={exchangeRate}
+                onChange={(e) => updateSettings({ rate: parseFloat(e.target.value) || 0 })}
               />
               <p style={{ fontSize: '0.75rem', color: 'var(--text-light)', marginTop: '6px' }}>
-                * เรทเงินโดยเฉลี่ยปัจจุบันอยู่ที่ประมาณ 600 - 750 กีบต่อบาท
+                * ใส่เรทเงินเทียบกับบาทไทย
               </p>
-            </div>
-          </div>
+              </div>
+              </div>
 
-          {/* Participants Management */}
-          <div className="card">
-            <h2>👥 ผู้ร่วมทริปในห้องนี้ ({participants.length} คน)</h2>
-            <div style={{ marginTop: '16px' }}>
+              {/* Participants Management */}
+              <div className="card">
+              <h2>👥 ผู้ร่วมทริปในห้องนี้ ({participants.length} คน)</h2>
+              <div style={{ marginTop: '16px' }}>
               <div className="participant-list">
                 {participants.map(p => (
                   <span key={p} className="participant-tag">
@@ -449,36 +449,36 @@ function App() {
                 ))}
               </div>
               <form onSubmit={handleAddParticipant} style={{ display: 'flex', gap: '10px', marginTop: '12px' }}>
-                <input 
-                  placeholder="เพิ่มชื่อสมาชิกใหม่..." 
-                  value={newParticipant} 
-                  onChange={(e) => setNewParticipant(e.target.value)} 
+                <input
+                  placeholder="เพิ่มชื่อสมาชิกใหม่..."
+                  value={newParticipant}
+                  onChange={(e) => setNewParticipant(e.target.value)}
                 />
                 <button style={{ width: 'auto', padding: '12px 20px' }}>เพิ่มคน</button>
               </form>
-            </div>
-          </div>
+              </div>
+              </div>
 
-          {/* Reset Room / Danger Zone */}
-          <div className="card" style={{ borderColor: 'rgba(224, 90, 71, 0.2)', background: 'rgba(224, 90, 71, 0.02)' }}>
-            <h2 style={{ color: 'var(--danger)' }}>🚨 พื้นที่อันตราย (Danger Zone)</h2>
-            <p style={{ fontSize: '0.8rem', color: 'var(--text-light)', marginTop: '8px' }}>
+              {/* Reset Room / Danger Zone */}
+              <div className="card" style={{ borderColor: 'rgba(224, 90, 71, 0.2)', background: 'rgba(224, 90, 71, 0.02)' }}>
+              <h2 style={{ color: 'var(--danger)' }}>🚨 พื้นที่อันตราย (Danger Zone)</h2>
+              <p style={{ fontSize: '0.8rem', color: 'var(--text-light)', marginTop: '8px' }}>
               ปุ่มด้านล่างจะลบประวัติธุรกรรมทั้งหมดภายในห้อง {tripId} นี้ และกู้กลับคืนไม่ได้
-            </p>
-            <button className="secondary-btn" onClick={handleReset}>
+              </p>
+              <button className="secondary-btn" onClick={handleReset}>
               ล้างข้อมูลห้องนี้ทั้งหมด
-            </button>
-          </div>
-        </div>
-      )}
+              </button>
+              </div>
+              </div>
+              )}
 
-      {/* Footer */}
-      <div className="footer">
-        DESIGNED BY <span style={{ fontWeight: 'bold', color: 'var(--secondary)' }}>9ton (ต้นนะครับ)</span> | © 2026 v.3.0.1
-        <div style={{ marginTop: '6px', fontSize: '10px', opacity: 0.7 }}>
-          ขับเคลื่อนด้วยพลังแห่งมรดกมรกตลาว 🇱🇦
-        </div>
-      </div>
+              {/* Footer */}
+              <div className="footer">
+              DESIGNED BY <span style={{ fontWeight: 'bold', color: 'var(--secondary)' }}>9ton (ต้นนะครับ)</span> | © 2026 v.3.0.2
+              <div style={{ marginTop: '6px', fontSize: '10px', opacity: 0.7 }}>
+              พร้อมลุยทุกทริป 🌍
+              </div>
+              </div>
     </div>
   );
 }
