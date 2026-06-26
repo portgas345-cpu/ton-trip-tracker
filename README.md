@@ -1,5 +1,7 @@
 # Laos Trip Expense Tracker
 
+*Automated deployment verification: Pipeline is active.*
+
 A simple, mobile-friendly web application to track and split expenses during your trip to Laos.
 
 ## Features
