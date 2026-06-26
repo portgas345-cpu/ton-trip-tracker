@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Kanit:wght@300;400;500;600&display=swap');
 
 :root {
-  --primary: #0e5a3c;        /* มรกตลาวเข้ม */
-  --primary-light: #168257;  /* มรกตสว่าง */
+  --primary: #4a6e82;        /* Blue-grey */
+  --primary-light: #6a8da0;  /* Lighter Blue-grey */
   --secondary: #d4af37;      /* ทองหลวงพระบาง */
   --secondary-light: #f4e3b1;/* ครีมทอง */
   --bg: #f4f6f4;             /* อะลาบาสเตอร์มิ้นต์ */
